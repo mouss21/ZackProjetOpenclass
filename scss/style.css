@@ -1,0 +1,344 @@
+.local {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 1rem;
+  background-color: #EAEAEA;
+  font-size: 1.2rem;
+  position: relative;
+  box-shadow: 1px 3px 7px 0px;
+}
+.local .localIcon {
+  margin-right: 1rem;
+}
+.local .localText {
+  font-weight: 700;
+}
+
+.heroContainer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+.heroContainer .herotitle {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+.heroContainer .heroBtn {
+  border: 0;
+  padding: 15px 23px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  cursor: pointer;
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+
+.process {
+  padding: 2rem 1rem;
+}
+.process .container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+.process .container .processes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: compteListe;
+}
+.process .container .processes .processe {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 0.75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  display: flex;
+  position: relative;
+}
+.process .container .processes .processe .processIcon {
+  margin-right: 1rem;
+  color: #7e7e7e;
+}
+.process .container .processes .processe .processNumber {
+  background-color: #9356dc;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  padding: 4px 9px 4px 9px;
+  border-radius: 50px;
+  transform: translateX(-185%);
+  margin-left: 0.6rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1029px) {
+  .local {
+    background-color: #eaeaea;
+    color: #353535;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .local .localIcon {
+    margin-right: 15px;
+  }
+  .local .localText {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .heroContainer {
+    text-align: center;
+    padding: 40px 20px 70px 20px;
+    background-color: #f6f6f6;
+  }
+  .heroContainer .herotitle {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 12px 0 30px 0;
+    margin-top: 0;
+  }
+  .heroContainer .heroBtn {
+    background-color: #999;
+    background-image: webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.07);
+    color: #fff;
+    text-decoration: none;
+    padding: 15.5px 22px;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+  .process {
+    background-color: #fff;
+  }
+  .process .container {
+    margin: auto;
+    max-width: 1440px;
+  }
+  .process .container .processes {
+    list-style: none;
+    padding: 25px 0 0 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  .process .container .processes .processe {
+    background-color: #f6f6f6;
+    box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 28px 35px;
+    width: 100%;
+    display: flex;
+    margin: 0px 14px;
+    transition: 0.3s;
+  }
+  .process .container .processes .processe .processNumber {
+    background-color: #9356dc;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    padding: 4px 9px 4px 9px;
+    border-radius: 50px;
+    transform: translateX(-185%);
+  }
+  .process .container .processes .processe .processIcon {
+    margin-right: 15px;
+  }
+  .process .container .processes .process__step:last-child {
+    margin: 0 0 0 14px;
+  }
+}
+.footer {
+  background-color: #353535;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.footer .container .footerLogo {
+  color: #fff;
+  font-family: Shrikhand, "cursive";
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+}
+.footer .container .footerList {
+  list-style: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.footer .container .footerList .footerText {
+  color: #fff;
+  text-decoration: none;
+}
+.footer .container .footerList .footerIcon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+.footer .container .footerList .footermargin {
+  margin: 0.5rem 0;
+}
+
+.header {
+  height: 63px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.header .headerLogo {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  text-decoration: none;
+  color: #101010;
+}
+
+.container-point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  z-index: 1;
+  animation: disappear 130ms forwards;
+  animation-delay: 5s;
+  transform-origin: top;
+}
+.container-point .point {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #9356dc;
+  animation: pulse 1.8s infinite ease-in-out;
+}
+.container-point .point .point:last-child {
+  margin-right: 0;
+}
+.container-point .point .point:nth-child(1) {
+  animation-delay: -0.3s;
+}
+.container-point .point .point:nth-child(2) {
+  animation-delay: -0.1s;
+}
+.container-point .point .point:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #9356dc;
+    box-shadow: 0 0 0 0 #9356dc;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #9356dc;
+  }
+}
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+.restaurants .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 20px;
+  padding: 25px 0 0 0;
+}
+.restaurants .card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.07);
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.restaurants .card .cardImage img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants .card .cardImage .cardBadge {
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 3px;
+  padding: 6px 12px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.restaurants .card .card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px 20px 15px;
+}
+.restaurants .card .card__footer .card__title {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+.restaurants .card .card__footer .card__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+}
+.restaurants .card .card__footer .card__icon {
+  font-size: 24px;
+}
+.restaurants .card .card__footer .card__icon .fas {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 100ms;
+}
+.restaurants .card .card__footer .card__icon .fas:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.restaurants .card .card__footer .card__icon .btn-heart {
+  position: absolute;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

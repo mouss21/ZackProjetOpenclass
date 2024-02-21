@@ -1,0 +1,62 @@
+.container-point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,.95);
+    position: fixed;
+    z-index: 1;
+    animation: disappear 130ms forwards;
+    animation-delay: 5s;
+    transform-origin: top;
+
+    .point {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+        border-radius: 10px;
+        background-color: #9356dc;
+        animation: pulse 1.8s infinite ease-in-out;
+    
+        .point:last-child {
+            margin-right: 0;
+        }
+          
+        .point:nth-child(1) {
+            animation-delay: -0.3s;
+        }
+          
+        .point:nth-child(2) {
+            animation-delay: -0.1s;
+        }
+          
+        .point:nth-child(3) {
+            animation-delay: 0.1s;
+        }
+    }
+}  
+
+@keyframes pulse {
+    0% {
+      transform: scale(0.8);
+      background-color: #9356dc;
+      box-shadow: 0 0 0 0 #9356dc;
+    }
+  
+    50% {
+      transform: scale(1.2);
+      background-color: #9356dc;
+    }  
+}
+
+@keyframes disappear {
+   from{
+      transform: scale(1);
+   } 
+   to{
+    transform: scale(0);
+   }
+}
+
