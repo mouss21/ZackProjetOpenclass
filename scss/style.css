@@ -149,6 +149,7 @@
     padding: 4px 9px 4px 9px;
     border-radius: 50px;
     transform: translateX(-185%);
+    margin-left: 0rem;
   }
   .process .container .processes .processe .processIcon {
     margin-right: 15px;
@@ -264,14 +265,16 @@ section {
 }
 
 .menu {
-  border-radius: 40px 40px 0 0;
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
+  z-index: 1;
   position: relative;
-  margin-top: -50px;
 }
 .menu .container {
+  max-width: 1140px;
   margin: auto;
-  max-width: 1440px;
+  position: relative;
 }
 
 .menu__header {
@@ -292,8 +295,6 @@ section {
 }
 
 .menu__lists {
-  display: flex;
-  flex-direction: row;
   align-content: space-between;
 }
 .menu__lists .menu__list {
@@ -326,6 +327,7 @@ section {
   margin: 15px 0 15px 0;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0.25rem 0.25rem 1rem #eaeaea;
 }
 .menu_lane .menu_text {
   height: 85px;
@@ -390,7 +392,7 @@ section {
   opacity: 1;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (min-width: 1140px) {
   .menu__lists {
     flex-direction: column;
   }
