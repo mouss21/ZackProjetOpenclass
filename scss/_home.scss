@@ -40,8 +40,11 @@
     }
 }
 
+section{
+    padding: 50px 20px;
+}
+
 .process {
-    padding: 2rem 1rem;
 
     .container {
         max-width: 1280px;
@@ -86,7 +89,7 @@
 
 
 
-@media only screen and (min-width : 768px){
+@media only screen and (min-width : 992px){
     .local {
         background-color: #eaeaea;
         color: #353535;

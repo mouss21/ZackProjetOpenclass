@@ -37,31 +37,24 @@
     -o-object-fit: cover;
     object-fit: cover;
 }
-// @media screen and (max-width: 768px){
-//     .banner img {
-//        height: 260px;
-//     }
-// }
 
 a {
     text-decoration: none;
     color: #000;
 }
 
-section {
-    padding: 50px 20px;
-}
-
 .menu {
-    margin-top: -4rem;
+    max-width: 920px;
+    margin: -4rem auto 0 auto;
     border-radius: 2rem 2rem 0 0;
     background-color: #f6f6f6;
     z-index: 1;
     position: relative;
+    
 
    
     .container {
-        max-width: 1140px;
+        max-width: 635px;
         margin: auto;
         position: relative;
     }
@@ -210,5 +203,9 @@ section {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    section {
+        padding: 50px 80px;
     }
 }

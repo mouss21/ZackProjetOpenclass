@@ -37,9 +37,10 @@
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
-.process {
-  padding: 2rem 1rem;
+section {
+  padding: 50px 20px;
 }
+
 .process .container {
   max-width: 1280px;
   margin: auto;
@@ -75,7 +76,7 @@
   margin-left: 0.6rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .local {
     background-color: #eaeaea;
     color: #353535;
@@ -260,19 +261,16 @@ a {
   color: #000;
 }
 
-section {
-  padding: 50px 20px;
-}
-
 .menu {
-  margin-top: -4rem;
+  max-width: 920px;
+  margin: -4rem auto 0 auto;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
 }
 .menu .container {
-  max-width: 1140px;
+  max-width: 635px;
   margin: auto;
   position: relative;
 }
@@ -395,6 +393,9 @@ section {
 @media screen and (min-width: 1140px) {
   .menu__lists {
     flex-direction: column;
+  }
+  section {
+    padding: 50px 80px;
   }
 }
 .header {
@@ -583,10 +584,6 @@ body {
 }
 .restaurants .card .card__footer .card__icon .btn-heart {
   position: absolute;
-}
-
-section {
-  padding: 50px 20px;
 }
 
 a {
