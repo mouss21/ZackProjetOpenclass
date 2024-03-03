@@ -24,17 +24,18 @@
   margin: 1.5rem 0;
 }
 .heroContainer .heroBtn {
-  border: 0;
-  padding: 15px 23px;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 100px;
-  color: #fff;
-  background-color: #686868;
+  background-color: #999;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.07);
+  color: #fff;
   cursor: pointer;
-  transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  padding: 15.5px 22px;
+  border-radius: 50px;
+  transition: 3ms;
+}
+.heroContainer .heroBtn:hover {
+  background-color: rgba(255, 121, 218, 0.9);
 }
 
 section {
@@ -103,17 +104,6 @@ section {
     font-weight: 300;
     padding: 12px 0 30px 0;
     margin-top: 0;
-  }
-  .heroContainer .heroBtn {
-    background-color: #999;
-    background-image: webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
-    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-    box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.07);
-    color: #fff;
-    text-decoration: none;
-    padding: 15.5px 22px;
-    border-radius: 50px;
-    transition: 0.3s;
   }
   .process {
     background-color: #fff;
@@ -226,6 +216,37 @@ section {
   margin: 0.5rem 0;
 }
 
+@media screen and (min-width: 1140px) {
+  .footer {
+    background-color: #353535;
+    padding: 40px 20px;
+  }
+  .footer .container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+  }
+  .footer .container .footerLogo {
+    color: #fff;
+    font-family: Shrikhand, "cursive";
+    font-size: 1.2rem;
+    margin: 0 40px 0;
+  }
+  .footer .container .footerList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .footer .container .footerList .footerText {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer .container .footerList .footerIcon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+  }
+}
 .header {
   height: 63px;
   background-color: #fff;
@@ -326,6 +347,7 @@ a {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0.25rem 0.25rem 1rem #eaeaea;
+  animation: appear 2s;
 }
 .menu_lane .menu_text {
   height: 85px;
@@ -383,7 +405,8 @@ a {
   width: 40px;
 }
 .menu_lane:hover .check_animation, .menu_lane:active .check_animation {
-  width: 25%;
+  width: 20%;
+  margin-left: 29px;
 }
 .menu_lane:hover .check_animation i, .menu_lane:active .check_animation i {
   transform: rotate(360deg);
@@ -468,6 +491,16 @@ a {
     transform: scale(0);
   }
 }
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -515,7 +548,11 @@ body {
   text-decoration: none;
   padding: 15.5px 55px;
   border-radius: 50px;
-  transition: 0.3s;
+  transition: 4ms;
+}
+
+.btn:hover {
+  background-color: rgba(255, 121, 218, 0.9);
 }
 
 .restaurants {
@@ -523,7 +560,7 @@ body {
 }
 .restaurants .cards {
   display: grid;
-  gap: 20px 20px;
+  gap: 50px 98px;
   padding: 25px 0 0 0;
 }
 .restaurants .card {
@@ -540,8 +577,6 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
-  -o-object-position: bottom;
-     object-position: bottom;
 }
 .restaurants .card .cardImage .cardBadge {
   background-color: #99e2d0;
@@ -596,7 +631,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px 20px;
+    gap: 50px 98px;
     padding: 25px 0 0 0;
   }
   .cardImage img {

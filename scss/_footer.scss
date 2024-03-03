@@ -36,3 +36,41 @@
     }
 
 }
+
+@media screen and (min-width : 1140px){
+    .footer {
+        background-color: #353535;
+        padding: 40px 20px;
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 1rem;
+    
+            .footerLogo {
+                color: #fff;
+                font-family: Shrikhand,"cursive";
+                font-size: 1.2rem;
+                margin: 0 40px 0;
+            }
+            .footerList {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+    
+                .footerText{
+                    color: #fff;
+                    text-decoration: none;
+                }
+    
+                .footerIcon{
+                    width: 1.2rem;
+                    margin-right: 0.5rem;
+                }
+    
+            }
+        }
+    
+    }
+    
+}
