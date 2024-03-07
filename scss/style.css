@@ -183,6 +183,10 @@ section {
     margin: 0px 14px;
     transition: 0.3s;
   }
+  .herotitle {
+    font-weight: 300;
+    margin: 2rem 0;
+  }
 }
 .footer {
   background-color: #353535;
