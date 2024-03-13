@@ -352,6 +352,19 @@ a {
   overflow: hidden;
   box-shadow: 0.25rem 0.25rem 1rem #eaeaea;
   animation: appear 2s;
+  animation-fill-mode: both;
+}
+.menu_lane:nth-child(1) {
+  animation-delay: 100ms;
+}
+.menu_lane:nth-child(2) {
+  animation-delay: 200ms;
+}
+.menu_lane:nth-child(3) {
+  animation-delay: 300ms;
+}
+.menu_lane:nth-child(4) {
+  animation-delay: 400ms;
 }
 .menu_lane .menu_text {
   height: 85px;

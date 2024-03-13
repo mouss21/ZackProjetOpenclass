@@ -106,7 +106,13 @@ a {
     }  
 }
 
+
 .menu_lane {
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}){
+            animation-delay: 100ms * $i;
+        }
+   }
     background-color: white;
     cursor: pointer;
     width: 100%;
@@ -117,6 +123,7 @@ a {
     overflow: hidden;
     box-shadow: 0.25rem 0.25rem 1rem #eaeaea;
     animation: appear 2s;
+    animation-fill-mode: both;
     .menu_text {
         height: 85px;
         display: flex;
